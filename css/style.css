@@ -1,0 +1,370 @@
+@font-face {
+  font-family: Constantia;
+  src: url(../fonts/const_regular.ttf);
+}
+
+@font-face {
+  font-family: Constantia-italic;
+  src: url(../fonts/const_italic.ttf);
+}
+
+* {
+  font-family: Constantia;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.constantia-italic {
+  font-family: Constantia-italic;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  background-color: #000000;
+}
+
+#shadow {
+  position: relative;
+  z-index: 10000;
+  background-color: #000000;
+  box-shadow: 0px 30px 55px red;
+}
+
+#main {
+  background-color: #000000;
+  padding: 0;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+#main iframe {
+  width: 640px;
+  height: 360px;
+  border: 5px solid #1D1D1C;
+  border-radius: 2px;
+}
+
+#main .layers {
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#main #layer0 {
+  background-image: url(../images/layer0.jpg);
+  z-index: 1;
+}
+
+#main #layer1 {
+  background-image: url(../images/layer1.png);
+  background-size: 100%;
+  z-index: 2;
+}
+
+#main #layer2 {
+  background-image: url(../images/layer2.png);
+  z-index: 3;
+}
+
+#main #layer3 {
+  position: relative;
+  z-index: 1000;
+}
+
+#main #layer3 img {
+  width: 80%;
+}
+
+#main #layer3 .col-6 img {
+  width: 250px;
+  transition: all 500ms;
+}
+
+#main #layer3 .col-6 img:hover {
+  transform: scale(1.1);
+}
+
+#main #layer3 p {
+  font-size: 18px;
+}
+
+#main #layer3 p:first-of-type {
+  font-size: 28px;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+
+#main #layer3 span {
+  color: #777;
+}
+
+#divider {
+  margin-top: -190px;
+}
+
+#divider #mobileimg {
+  display: none;
+}
+
+#divider img {
+  position: relative;
+  z-index: 1;
+}
+
+#nletter {
+  padding: 1% 10% 2% 10%;
+  position: relative;
+  z-index: 10;
+  background-image: url(../images/bottomparallax.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#nletter h3 {
+  margin-top: 8%;
+  text-shadow: 0px 0px 5px #000000;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+#nletter p {
+  text-align: center;
+  font-size: 32px;
+}
+
+#nletter p span {
+  text-transform: uppercase;
+}
+
+#nletter form input {
+  height: 2.5em;
+  border: 3px solid #86827A;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #bdb6b0;
+}
+
+#nletter form input:hover {
+  border-color: #f1840f;
+}
+
+#nletter form input:focus {
+  border-color: #f1840f;
+}
+
+#nletter form p {
+  margin-left: -15px;
+  width: 100%;
+  margin-right: 30px;
+  font-size: 12px;
+  text-align: left;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+#nletter form a {
+  color: #f18610;
+}
+
+#nletter button {
+  height: 2.5em;
+  margin-right: 10px;
+  padding: 5px 15px;
+  border: 3px solid #847B74;
+  background-color: #f1840f;
+  color: #ffffff;
+}
+
+#nletter button:hover {
+  color: #ffffff;
+  background-color: #0f0e0a;
+}
+
+#nletter .d-flex {
+  padding: 0px 15%;
+  margin-top: 15%;
+}
+
+#nletter .d-flex a:hover {
+  box-shadow: 0px 0px 15px #c1bbb0;
+  filter: brightness(2);
+}
+
+#footer {
+  background-image: url(../images/bottom.jpg);
+}
+
+#footer img {
+  height: 100%;
+  transform: scale(0.5);
+}
+
+#footer p {
+  margin: -5px;
+  padding-bottom: 5px;
+}
+
+#footer .d-flex {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#footer .d-flex div {
+  width: 25%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #main p:first-of-type {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #main iframe {
+    width: 500px;
+    height: 280px;
+  }
+  #main #layer1, #main #layer2 {
+    display: none;
+  }
+  #main #layer3 p:first-of-type {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  #main #layer3 .col-6 img {
+    width: 250px;
+  }
+  #divider {
+    background-color: #000000;
+    position: relative;
+    z-index: 1000;
+  }
+  #divider img {
+    margin-top: 140px;
+  }
+  #divider img:first-of-type {
+    display: none;
+  }
+  #divider #mobileimg {
+    margin: 140px auto 0px auto;
+    display: block;
+    width: 200px;
+  }
+  #nletter input {
+    display: block;
+    margin: 0 auto;
+  }
+  #nletter a img {
+    width: 50px;
+  }
+  #footer img {
+    margin: -15px;
+    transform: scale(0.4);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #main iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main iframe {
+    width: 100%;
+    height: 200px;
+  }
+  #main #layer1, #main #layer2 {
+    display: none;
+  }
+  #main #layer3 p {
+    font-size: 14px;
+  }
+  #main #layer3 p:first-of-type {
+    font-size: 14px;
+    margin: 5px;
+  }
+  #main #layer3 .col-6 img {
+    width: 250px;
+  }
+  #nletter p {
+    font-size: 20px;
+  }
+  #nletter a {
+    padding: 2px;
+  }
+  #nletter a img {
+    width: 50px;
+  }
+  #footer {
+    font-size: 12px;
+    padding: 0px;
+  }
+  #footer .container {
+    padding: 0px;
+  }
+  #footer .d-flex {
+    padding: 0px;
+  }
+  #footer img {
+    margin: -15px;
+    transform: scale(0.4);
+  }
+}
+
+@media only screen and (min-aspect-ratio: 19 / 10) {
+  #layer0 {
+    background-size: 100% !important;
+  }
+  #layer1 {
+    background-size: 100% !important;
+  }
+  #layer2 {
+    background-size: 100% !important;
+    background-position: bottom;
+  }
+  #nletter {
+    background-size: 100% !important;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 19 / 10) {
+  #layer0 {
+    background-size: auto 100% !important;
+  }
+  #layer1 {
+    background-size: 100% !important;
+  }
+  #layer2 {
+    background-size: 100% !important;
+    background-position: bottom !important;
+  }
+  #nletter {
+    background-size: 100% !important;
+    background-position-y: -100px;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 15 / 10) {
+  #nletter {
+    background-size: auto 110% !important;
+    background-position-y: -100px;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 12 / 10) {
+  #nletter {
+    background-size: auto 110% !important;
+    background-position-y: -120px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
